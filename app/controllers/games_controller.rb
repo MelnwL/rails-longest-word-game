@@ -13,15 +13,11 @@ class GamesController < ApplicationController
     url = "https://wagon-dictionary.herokuapp.com/#{params[:word]}"
     word_serialized = URI.open(url).read
     word = JSON.parse(word_serialized)
-raise
 
-  #   if word.
-
-  #   elsif
-  #     word["found"] == true
-  #     return "you win"
-  #   else "you've lost"
-  #   end
-  # end
-end
+    #  if word.split(//).each { |letter| @letters.include?(letter) }
+    #  elsif word["found"] == true
+    #  return "you win"
+    #  else "you've lost"
+    #  end
+  end
 end
